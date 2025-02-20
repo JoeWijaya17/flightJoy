@@ -7,7 +7,7 @@ use App\Models\Airport;
 
 class AirportRepository implements AirportRepositoryInterface
 {
-    public function getAllAirpots()
+    public function getAllAirports()
     {
         return Airport::all();
     }
@@ -21,7 +21,4 @@ class AirportRepository implements AirportRepositoryInterface
     {
         return Airport::where('iata_code', $iataCode)->first();
     }
-
-
-
 }
